@@ -4,12 +4,26 @@
 
 @import url("./stylesheet/root.css");
 
+:root {
+  --primary-text-color: #1d1b1b;
+
+  /*  */
+
+  --title-font: "Marck Script", sans-serif;
+  --secondary-font: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  color: var(--primary-text-color);
   font-family: "Lato", sans-serif;
   font-weight: 400;
 
