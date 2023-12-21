@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Jully_Nails/static/css/main.64719d64.css",
-    "main.js": "/Jully_Nails/static/js/main.164d061d.js",
+    "main.css": "/Jully_Nails/static/css/main.c3f94784.css",
+    "main.js": "/Jully_Nails/static/js/main.376bec6a.js",
     "index.html": "/Jully_Nails/index.html",
-    "main.64719d64.css.map": "/Jully_Nails/static/css/main.64719d64.css.map",
-    "main.164d061d.js.map": "/Jully_Nails/static/js/main.164d061d.js.map"
+    "static/media/getFetch.cjs": "/Jully_Nails/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.c3f94784.css.map": "/Jully_Nails/static/css/main.c3f94784.css.map",
+    "main.376bec6a.js.map": "/Jully_Nails/static/js/main.376bec6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.64719d64.css",
-    "static/js/main.164d061d.js"
+    "static/css/main.c3f94784.css",
+    "static/js/main.376bec6a.js"
   ]
 }
