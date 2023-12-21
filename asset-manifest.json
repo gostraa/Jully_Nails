@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/Jully_Nails/static/css/main.c3f94784.css",
-    "main.js": "/Jully_Nails/static/js/main.376bec6a.js",
+    "main.css": "/Jully_Nails/static/css/main.bc2d414a.css",
+    "main.js": "/Jully_Nails/static/js/main.5cdef61d.js",
+    "static/media/mainfoto.png": "/Jully_Nails/static/media/mainfoto.73e5d68e1ac1eefd98e1.png",
+    "static/media/map.svg": "/Jully_Nails/static/media/map.371964cceee2cbae5f1e0f7bd7d13543.svg",
+    "static/media/facebook.svg": "/Jully_Nails/static/media/facebook.95fff5b21b66acfeaaf2ee1408dd1312.svg",
+    "static/media/phone.svg": "/Jully_Nails/static/media/phone.49f36587d229c16a7f2b4167d47f6770.svg",
+    "static/media/insta.svg": "/Jully_Nails/static/media/insta.ef11c3d0a931f3e6ace46a5f3c084710.svg",
     "index.html": "/Jully_Nails/index.html",
     "static/media/getFetch.cjs": "/Jully_Nails/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.c3f94784.css.map": "/Jully_Nails/static/css/main.c3f94784.css.map",
-    "main.376bec6a.js.map": "/Jully_Nails/static/js/main.376bec6a.js.map"
+    "main.bc2d414a.css.map": "/Jully_Nails/static/css/main.bc2d414a.css.map",
+    "main.5cdef61d.js.map": "/Jully_Nails/static/js/main.5cdef61d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3f94784.css",
-    "static/js/main.376bec6a.js"
+    "static/css/main.bc2d414a.css",
+    "static/js/main.5cdef61d.js"
   ]
 }
