@@ -1,14 +1,10 @@
-import { useTranslation } from "react-i18next";
 import {
   Container,
   MainPhotoThumb,
   StyledHeroWrapper,
   StyledList,
-  StyledListItem,
   StyledListLink,
-  StyledP,
   StyledPSub,
-  StyledTitle,
 } from "./Hero.styled";
 import MainPhoto from "../../images/mainfoto.png";
 
@@ -18,7 +14,6 @@ import { ReactComponent as Instagram } from "../../images/svg/insta.svg";
 import { ReactComponent as Facebook } from "../../images/svg/facebook.svg";
 
 const Hero = () => {
-  const { t } = useTranslation();
   return (
     <section>
       <Container>
