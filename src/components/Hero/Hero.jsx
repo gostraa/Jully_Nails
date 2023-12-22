@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   Container,
   MainPhotoThumb,
@@ -14,6 +16,8 @@ import { ReactComponent as Instagram } from "../../images/svg/insta.svg";
 import { ReactComponent as Facebook } from "../../images/svg/facebook.svg";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section>
       <Container>
@@ -21,7 +25,7 @@ const Hero = () => {
           <img src={MainPhoto} alt="Julia" />
         </MainPhotoThumb>
         <StyledHeroWrapper>
-          <h1>So mnou vaše nechty budú dokonalé</h1>
+          <h1>{t("heroTitle")}</h1>
           <StyledList>
             <li>
               <div>

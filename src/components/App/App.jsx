@@ -1,14 +1,14 @@
-import TransitionPanel from "components/TransitionPanel/TransitionPanel.jsx";
 import Hero from "components/Hero/Hero.jsx";
+import Header from "components/Header/Header.jsx";
 
-import "./App.styled.js";
+import { MainContainer } from "./App.styled.js";
 
 function App() {
   return (
-    <>
-      <TransitionPanel />
+    <MainContainer>
+      <Header />
       <Hero />
-    </>
+    </MainContainer>
   );
 }
 
