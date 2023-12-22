@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/Jully_Nails/static/css/main.3a2066cd.css",
-    "main.js": "/Jully_Nails/static/js/main.5128410e.js",
+    "main.js": "/Jully_Nails/static/js/main.9f1985e0.js",
     "static/media/mainfoto.png": "/Jully_Nails/static/media/mainfoto.73e5d68e1ac1eefd98e1.png",
+    "static/media/logo.svg": "/Jully_Nails/static/media/logo.e50d4ece4495a168800290336dbb168a.svg",
     "static/media/map.svg": "/Jully_Nails/static/media/map.371964cceee2cbae5f1e0f7bd7d13543.svg",
     "static/media/facebook.svg": "/Jully_Nails/static/media/facebook.95fff5b21b66acfeaaf2ee1408dd1312.svg",
     "static/media/phone.svg": "/Jully_Nails/static/media/phone.49f36587d229c16a7f2b4167d47f6770.svg",
     "static/media/insta.svg": "/Jully_Nails/static/media/insta.ef11c3d0a931f3e6ace46a5f3c084710.svg",
+    "static/media/global.svg": "/Jully_Nails/static/media/global.880c2393bbe577ea2cadd11642be980b.svg",
+    "static/media/arrowDown.svg": "/Jully_Nails/static/media/arrowDown.bc3c8a0bf50ed2aae655d5f2b9ab82b1.svg",
     "index.html": "/Jully_Nails/index.html",
     "static/media/getFetch.cjs": "/Jully_Nails/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "static/media/burger.svg": "/Jully_Nails/static/media/burger.60d146269cdec496323d20569c881508.svg",
     "main.3a2066cd.css.map": "/Jully_Nails/static/css/main.3a2066cd.css.map",
-    "main.5128410e.js.map": "/Jully_Nails/static/js/main.5128410e.js.map"
+    "main.9f1985e0.js.map": "/Jully_Nails/static/js/main.9f1985e0.js.map"
   },
   "entrypoints": [
     "static/css/main.3a2066cd.css",
-    "static/js/main.5128410e.js"
+    "static/js/main.9f1985e0.js"
   ]
 }
