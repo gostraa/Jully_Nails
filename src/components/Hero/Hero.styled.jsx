@@ -31,11 +31,11 @@ export const MainPhotoThumb = styled.div`
 export const StyledHeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
 
   & h1 {
     text-align: center;
-    font-family: var(--title-font);
+    font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 400;
     line-height: 1.25;
@@ -52,6 +52,7 @@ export const StyledHeroWrapper = styled.div`
     & h1 {
       font-size: 60px;
       text-align: left;
+      width: 536px;
     }
   }
 `;
