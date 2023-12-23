@@ -6,8 +6,7 @@ const modal = document.querySelector("#modal");
 
 export default function ModalTranslation(
   handleBackdropClick = () => {},
-  handleKeyDown = () => {},
-  closeModal = () => {}
+  handleKeyDown = () => {}
 ) {
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
@@ -18,5 +17,14 @@ export default function ModalTranslation(
 
   const { t } = useTranslation();
 
-  return createPortal(<div></div>, modal);
+  return createPortal(
+    <div onClick={handleBackdropClick}>
+      <div>
+        <button>{t("slv")}</button>
+        <button>{t("rus")}</button>
+        <button>{t("ukr")}</button>
+      </div>
+    </div>,
+    modal
+  );
 }
