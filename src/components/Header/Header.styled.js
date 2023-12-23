@@ -25,6 +25,8 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled.div``;
 
-export const BurgerMenu = styled(Burger)``;
+export const BurgerMenu = styled(Burger)`
+  cursor: pointer;
+`;
 
 export const LogoSVG = styled(Logo)``;

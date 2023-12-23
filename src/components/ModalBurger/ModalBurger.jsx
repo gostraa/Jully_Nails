@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { BackdropModal, CrossButton } from "./ModalBurger.styled";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
