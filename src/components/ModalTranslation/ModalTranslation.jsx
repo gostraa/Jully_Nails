@@ -5,10 +5,11 @@ import { BackdropModal, Modal, Translation } from "./ModalTranslation.styled";
 
 const modal = document.querySelector("#modal");
 
-export default function ModalTranslation({
+const ModalTranslation = ({
   handleBackdropClick,
   handleKeyDown,
-}) {
+  otherLanguage,
+}) => {
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => {
@@ -21,11 +22,13 @@ export default function ModalTranslation({
   return createPortal(
     <BackdropModal onClick={handleBackdropClick}>
       <Modal>
-        <Translation>{t("slv")}</Translation>
-        <Translation>{t("rus")}</Translation>
-        <Translation>{t("ukr")}</Translation>
+        {otherLanguage.map(({ code, label }) => (
+          <Translation key={code}>{t(label)}</Translation>
+        ))}
       </Modal>
     </BackdropModal>,
     modal
   );
-}
+};
+
+export default ModalTranslation;

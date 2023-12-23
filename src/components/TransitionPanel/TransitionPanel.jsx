@@ -43,23 +43,25 @@ const TranslationPanel = () => {
 
   const currentLanguageLabel = languages.find(
     lang => lang.code === currentLanguage
-  )?.label;
+  );
 
-  const { isOpen, openModal, closeModal, handleKeyDown, handleBackdropClick } =
+  const otherLanguage = languages.filter(lang => lang.code !== currentLanguage);
+
+  const { isOpen, openModal, handleKeyDown, handleBackdropClick } =
     useToggleModal();
 
   return windowWidth === "isMobile" ? (
     <>
       <MobileTranslation onClick={() => openModal()}>
         <Globe />
-        <TraslationButton>{t(currentLanguageLabel)}</TraslationButton>
+        <TraslationButton>{t(currentLanguageLabel.label)}</TraslationButton>
         <ArrowDown />
       </MobileTranslation>
       {isOpen && (
         <ModalTranslation
-          closeModal={() => closeModal()}
           handleKeyDown={handleKeyDown}
           handleBackdropClick={handleBackdropClick}
+          otherLanguage={otherLanguage}
         />
       )}
     </>
