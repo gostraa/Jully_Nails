@@ -1,35 +1,31 @@
-import { StyledSlideDiv, StyledSlideList } from "./Manicure.styled";
-import { ReactComponent as ArrowLeft } from "../../images/svg/arrowLeft.svg";
-import { ReactComponent as ArrowRight } from "../../images/svg/arrowRight.svg";
+import { useTranslation } from "react-i18next";
 
+import { settings } from "constants/constants";
 import { manikureImg } from "constants/manikureData";
 
+import {
+  StyledProImg,
+  StyledSlideDiv,
+  StyledSlideList,
+  StyledWrapper,
+} from "./Manikure.styled";
+
 const Manikure = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    centerPadding: "60px",
-    dots: false,
-    infinite: true,
-    initialSlide: 1,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <ArrowRight />,
-    prevArrow: <ArrowLeft />,
-  };
+  const { t } = useTranslation();
+
   return (
-    <div>
+    <StyledWrapper>
+      <h2>{t("manicure")}</h2>
       <StyledSlideList {...settings}>
         {manikureImg.map((img, idx) => {
           return (
             <StyledSlideDiv key={idx}>
-              <img src={img} alt="manikure" />
+              <StyledProImg src={img} alt="manikure" />
             </StyledSlideDiv>
           );
         })}
       </StyledSlideList>
-    </div>
+    </StyledWrapper>
   );
 };
 
