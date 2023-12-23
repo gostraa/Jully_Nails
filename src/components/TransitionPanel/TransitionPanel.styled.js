@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const MobileTranslation = styled.div``;
+export const MobileTranslation = styled.div`
+  cursor: pointer;
+`;
 
 export const TraslationList = styled.ul`
   display: grid;
