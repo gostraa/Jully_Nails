@@ -3,6 +3,7 @@ import i18next from "i18next";
 import { useEffect, useState } from "react";
 
 import useWindowWidth from "hooks/useWindowWidth";
+import useToggleModal from "hooks/useToggleModal";
 
 import { ReactComponent as Globe } from "images/svg/global.svg";
 import { ReactComponent as ArrowDown } from "images/svg/arrowDown.svg";
@@ -13,6 +14,7 @@ import {
   TraslationItem,
   TraslationList,
 } from "./TransitionPanel.styled";
+import ModalTranslation from "components/ModalTranslation/ModalTranslation";
 
 const TranslationPanel = () => {
   const { i18n, t } = useTranslation();
@@ -43,12 +45,24 @@ const TranslationPanel = () => {
     lang => lang.code === currentLanguage
   )?.label;
 
+  const { isOpen, openModal, closeModal, handleKeyDown, handleBackdropClick } =
+    useToggleModal();
+
   return windowWidth === "isMobile" ? (
-    <MobileTranslation>
-      <Globe />
-      <TraslationButton>{t(currentLanguageLabel)}</TraslationButton>
-      <ArrowDown />
-    </MobileTranslation>
+    <>
+      <MobileTranslation onClick={() => openModal()}>
+        <Globe />
+        <TraslationButton>{t(currentLanguageLabel)}</TraslationButton>
+        <ArrowDown />
+      </MobileTranslation>
+      {isOpen && (
+        <ModalTranslation
+          closeModal={() => closeModal()}
+          handleKeyDown={handleKeyDown}
+          handleBackdropClick={handleBackdropClick}
+        />
+      )}
+    </>
   ) : (
     <TraslationList>
       {languages.map(({ code, label }) => (
