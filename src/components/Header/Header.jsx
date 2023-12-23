@@ -20,7 +20,6 @@ const Header = () => {
         {windowWidth === "isMobile" && <BurgerMenu />}
         <LogoSVG />
       </LogoContainer>
-
       <TranslationPanel />
     </HeaderContainer>
   );
