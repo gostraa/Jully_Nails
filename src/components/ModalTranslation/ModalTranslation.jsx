@@ -9,6 +9,8 @@ const ModalTranslation = ({
   handleBackdropClick,
   handleKeyDown,
   otherLanguage,
+  onChange,
+  closeModal,
 }) => {
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
@@ -19,11 +21,18 @@ const ModalTranslation = ({
 
   const { t } = useTranslation();
 
+  const handleClick = code => {
+    onChange(code);
+    closeModal();
+  };
+
   return createPortal(
     <BackdropModal onClick={handleBackdropClick}>
       <Modal>
         {otherLanguage.map(({ code, label }) => (
-          <Translation key={code}>{t(label)}</Translation>
+          <Translation key={code} onClick={() => handleClick(code)}>
+            {t(label)}
+          </Translation>
         ))}
       </Modal>
     </BackdropModal>,

@@ -47,7 +47,7 @@ const TranslationPanel = () => {
 
   const otherLanguage = languages.filter(lang => lang.code !== currentLanguage);
 
-  const { isOpen, openModal, handleKeyDown, handleBackdropClick } =
+  const { isOpen, openModal, handleKeyDown, closeModal, handleBackdropClick } =
     useToggleModal();
 
   return windowWidth === "isMobile" ? (
@@ -62,6 +62,8 @@ const TranslationPanel = () => {
           handleKeyDown={handleKeyDown}
           handleBackdropClick={handleBackdropClick}
           otherLanguage={otherLanguage}
+          onChange={changeLanguage}
+          closeModal={closeModal}
         />
       )}
     </>
