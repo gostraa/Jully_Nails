@@ -3,17 +3,17 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 320px;
-  padding: 0 50px;
+  padding: 0 50px 60px 50px;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 0 148px;
+    padding: 0 148px 80px 148px;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
     gap: 46px;
     max-width: 1280px;
-    padding: 0 130px;
+    padding: 0 130px 120px 130px;
   }
 `;
 
