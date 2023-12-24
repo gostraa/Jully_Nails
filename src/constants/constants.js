@@ -3,7 +3,7 @@
 
 export const settings = {
   className: "slider center",
-
+  lazyLoading: true,
   dots: false,
   infinite: true,
   adaptiveHeight: true,
@@ -14,9 +14,9 @@ export const settings = {
   centerMode: true,
   variableWidth: true,
 
-  autoplay: true,
-  autoplaySpeed: 2000,
-  pauseOnHover: true,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  // pauseOnHover: true,
 
   // nextArrow: <ArrowRight />,
   // prevArrow: <ArrowLeft />,
