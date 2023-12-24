@@ -6,16 +6,16 @@ import "slick-carousel/slick/slick-theme.css";
 export const StyledWrapper = styled.section`
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 
   @media (min-width: 768px) {
     width: 768px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: 1280px) {
     width: 1280px;
-    padding: 0 136px 120px 136px;
+    padding: 0 136px 100px 136px;
   }
 `;
 
@@ -59,7 +59,7 @@ export const StyledSlideList = styled(Slider)`
 
   & .slick-next {
     width: 10px;
-    top: 292px;
+    top: 305px;
     right: 130px;
 
     @media (min-width: 768px) {
@@ -76,7 +76,7 @@ export const StyledSlideList = styled(Slider)`
 
   & .slick-prev {
     width: 10px;
-    top: 292px;
+    top: 305px;
     left: 130px;
 
     @media (min-width: 768px) {
