@@ -1,5 +1,3 @@
-import { useTranslation } from "react-i18next";
-
 import { settings } from "constants/constants";
 import { manikureImg } from "constants/manikureData";
 
@@ -9,13 +7,12 @@ import {
   StyledSlideList,
   StyledWrapper,
 } from "./Manikure.styled";
+import { CommonTitle } from "constants/commonStyles";
 
-const Manikure = () => {
-  const { t } = useTranslation();
-
+const Manikure = ({ t }) => {
   return (
     <StyledWrapper>
-      <h2>{t("manicure")}</h2>
+      <CommonTitle>{t("manicure")}</CommonTitle>
       <StyledSlideList {...settings}>
         {manikureImg.map((img, idx) => {
           return (
