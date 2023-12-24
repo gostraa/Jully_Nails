@@ -26,11 +26,11 @@ export const StyledSlideList = styled(Slider)`
     & .slick-slide div {
       width: 240px;
       height: 283px;
-      transition: transform 0.3s;
+      /* transition: transform 0.3s; */
     }
 
     & .slick-current div {
-      transform: scale(1.25);
+      /* transform: scale(1.25); */
     }
 
     & .slick-slide {
@@ -86,7 +86,7 @@ export const StyledSlideList = styled(Slider)`
 export const StyledSlideDiv = styled.div`
   height: 273px;
   padding: 0 8px;
-  transition: transform 0.3s;
+  /* transition: transform 0.3s; */
 
   @media (min-width: 768px) {
     height: 396px;
@@ -98,7 +98,7 @@ export const StyledSlideDiv = styled.div`
   }
 
   &.slick-center {
-    transform: scale(1.25);
+    /* transform: scale(1.25); */
   }
 `;
 
