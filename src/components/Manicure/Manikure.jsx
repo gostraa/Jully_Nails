@@ -2,7 +2,7 @@ import { settings } from "constants/constants";
 import { manikureImg } from "constants/manikureData";
 
 import {
-  StyledProImg,
+  // StyledProImg,
   StyledSlideDiv,
   StyledSlideList,
   StyledWrapper,
