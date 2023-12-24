@@ -1,5 +1,5 @@
-// import { ReactComponent as ArrowLeft } from "../images/svg/arrowLeft.svg";
-// import { ReactComponent as ArrowRight } from "../images/svg/arrowRight.svg";
+import { ReactComponent as ArrowLeft } from "../images/svg/arrowLeft.svg";
+import { ReactComponent as ArrowRight } from "../images/svg/arrowRight.svg";
 
 export const settings = {
   className: "slider center",
@@ -18,8 +18,8 @@ export const settings = {
   // autoplaySpeed: 2000,
   // pauseOnHover: true,
 
-  // nextArrow: <ArrowRight />,
-  // prevArrow: <ArrowLeft />,
+  nextArrow: <ArrowRight />,
+  prevArrow: <ArrowLeft />,
 };
 
 export const settingsVariants = {
@@ -35,8 +35,8 @@ export const settingsVariants = {
   centerMode: true,
   variableWidth: true,
 
-  // nextArrow: <ArrowRight />,
-  // prevArrow: <ArrowLeft />,
+  nextArrow: <ArrowRight />,
+  prevArrow: <ArrowLeft />,
   responsive: [
     {
       breakpoint: 768,
