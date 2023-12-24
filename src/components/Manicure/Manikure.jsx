@@ -2,7 +2,7 @@ import { settings } from "constants/constants";
 import { manikureImg } from "constants/manikureData";
 
 import {
-  // StyledProImg,
+  StyledProImg,
   StyledSlideDiv,
   StyledSlideList,
   StyledWrapper,
@@ -17,7 +17,7 @@ const Manikure = ({ t }) => {
         {manikureImg.map((img, idx) => {
           return (
             <StyledSlideDiv key={idx}>
-              {/* <StyledProImg src={img} alt="manikure" /> */}
+              <StyledProImg src={img} alt="manikure" />
             </StyledSlideDiv>
           );
         })}
