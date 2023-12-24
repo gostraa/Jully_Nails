@@ -1,5 +1,5 @@
-import { ReactComponent as ArrowLeft } from "../images/svg/arrowLeft.svg";
-import { ReactComponent as ArrowRight } from "../images/svg/arrowRight.svg";
+// import { ReactComponent as ArrowLeft } from "../images/svg/arrowLeft.svg";
+// import { ReactComponent as ArrowRight } from "../images/svg/arrowRight.svg";
 
 export const settings = {
   className: "slider center",
