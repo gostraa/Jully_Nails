@@ -1,11 +1,18 @@
 {
   "files": {
     "main.css": "/Jully_Nails/static/css/main.5afc53e9.css",
-    "main.js": "/Jully_Nails/static/js/main.833dfe22.js",
+    "main.js": "/Jully_Nails/static/js/main.32b69456.js",
+    "static/media/2.jpg": "/Jully_Nails/static/media/2.86f2305e1b183b4b1493.jpg",
     "static/media/mainfoto.png": "/Jully_Nails/static/media/mainfoto.73e5d68e1ac1eefd98e1.png",
     "static/media/logo.svg": "/Jully_Nails/static/media/logo.e50d4ece4495a168800290336dbb168a.svg",
+    "static/media/4.jpg": "/Jully_Nails/static/media/4.240b55def38ea5623280.jpg",
+    "static/media/6.jpg": "/Jully_Nails/static/media/6.4ca0aaefc2c49ec47ce7.jpg",
+    "static/media/9.jpg": "/Jully_Nails/static/media/9.c11b860fbecba3b87dd2.jpg",
+    "static/media/7.jpg": "/Jully_Nails/static/media/7.2df99db0ff021508e459.jpg",
+    "static/media/5.jpg": "/Jully_Nails/static/media/5.6c01086afea37a35fa14.jpg",
+    "static/media/8.jpg": "/Jully_Nails/static/media/8.37bc707b484be9290565.jpg",
     "static/media/3.jpg": "/Jully_Nails/static/media/3.fc4eeac9fe9cd6fd3c13.jpg",
-    "static/media/2.jpg": "/Jully_Nails/static/media/2.86f2305e1b183b4b1493.jpg",
+    "static/media/1.jpg": "/Jully_Nails/static/media/1.89c785e0fa59cc93455a.jpg",
     "static/media/map.svg": "/Jully_Nails/static/media/map.371964cceee2cbae5f1e0f7bd7d13543.svg",
     "static/media/facebook.svg": "/Jully_Nails/static/media/facebook.95fff5b21b66acfeaaf2ee1408dd1312.svg",
     "static/media/phone.svg": "/Jully_Nails/static/media/phone.49f36587d229c16a7f2b4167d47f6770.svg",
@@ -23,10 +30,10 @@
     "static/media/arrowLeft.svg": "/Jully_Nails/static/media/arrowLeft.97a863f75054adcbf57603c591d149dc.svg",
     "static/media/arrowRight.svg": "/Jully_Nails/static/media/arrowRight.23e1811253ca1c6de8d2079247eb7a5e.svg",
     "main.5afc53e9.css.map": "/Jully_Nails/static/css/main.5afc53e9.css.map",
-    "main.833dfe22.js.map": "/Jully_Nails/static/js/main.833dfe22.js.map"
+    "main.32b69456.js.map": "/Jully_Nails/static/js/main.32b69456.js.map"
   },
   "entrypoints": [
     "static/css/main.5afc53e9.css",
-    "static/js/main.833dfe22.js"
+    "static/js/main.32b69456.js"
   ]
 }
