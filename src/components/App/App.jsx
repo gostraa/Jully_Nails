@@ -4,6 +4,7 @@ import Header from "components/Header/Header.jsx";
 
 import Manikure from "components/Manicure/Manikure.jsx";
 import { NailShapes } from "components/NailShapes/NailShapes";
+import Diploms from "components/Diploms/Diploms";
 
 function App() {
   const { t } = useTranslation();
@@ -13,6 +14,7 @@ function App() {
       <Hero t={t} />
       <Manikure t={t} />
       <NailShapes t={t} />
+      <Diploms t={t} />
     </>
   );
 }

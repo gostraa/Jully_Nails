@@ -37,6 +37,16 @@ import eckig1 from "../images/forms/Eckig/1.jpg";
 import eckig2 from "../images/forms/Eckig/2.jpg";
 import eckig3 from "../images/forms/Eckig/3.jpg";
 
+// diploms
+
+import diplom1 from "../images/diploms/1.png";
+import diplom2 from "../images/diploms/2.png";
+import diplom3 from "../images/diploms/3.png";
+
+import diplomOrg1 from "../images/diploms/original/diplomOrg1.jpg";
+import diplomOrg2 from "../images/diploms/original/diplomOrg2.jpg";
+import diplomOrg3 from "../images/diploms/original/diplomOrg3.jpg";
+
 export const manikureImg = [
   img1,
   img2,
@@ -56,4 +66,19 @@ export const manikureVariants = [
   { stiletto: [stiletto1, stiletto2, stiletto3] },
   { softSquare: [weichEckig1, weichEckig2, weichEckig3] },
   { square: [eckig1, eckig2, eckig3] },
+];
+
+export const diplomsData = [
+  {
+    thumbnail: diplom1,
+    original: diplomOrg1,
+  },
+  {
+    thumbnail: diplom2,
+    original: diplomOrg2,
+  },
+  {
+    thumbnail: diplom3,
+    original: diplomOrg3,
+  },
 ];
