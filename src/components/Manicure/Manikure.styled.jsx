@@ -21,7 +21,6 @@ export const StyledWrapper = styled.section`
 
 export const StyledSlideList = styled(Slider)`
   margin-bottom: 50px;
-  /* border: 12px solid green; */
   & .slick-slide div {
     width: 240px;
     height: 283px;
@@ -109,7 +108,6 @@ export const StyledSlideDiv = styled.div`
   &.slick-center {
     transform: scale(1.25);
   }
-  /* border: 8px solid red; */
 `;
 
 export const StyledProImg = styled.img`

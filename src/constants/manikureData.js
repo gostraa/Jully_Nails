@@ -82,3 +82,20 @@ export const diplomsData = [
     original: diplomOrg3,
   },
 ];
+
+// reviews
+
+export const reviews = [
+  {
+    name: "Diana Kohima",
+    comment: "commentDiana",
+  },
+  {
+    name: "Alenka🖤",
+    comment: "commentAlenka",
+  },
+  {
+    name: "Mariia",
+    comment: "commentMariia",
+  },
+];
