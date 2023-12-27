@@ -4,17 +4,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const StyledWrapper = styled.section`
-  width: 320px;
+  max-width: 375px;
   margin: 0 auto;
   padding-bottom: 40px;
 
   @media (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
     padding-bottom: 60px;
   }
 
   @media (min-width: 1280px) {
-    width: 1280px;
+    max-width: 1280px;
     padding: 0 136px 100px 136px;
   }
 `;

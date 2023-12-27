@@ -4,16 +4,16 @@ import Slider from "react-slick";
 import { ReactComponent as QuotesSvg } from "../../images/svg/quotes.svg";
 
 export const ReviewsSection = styled.section`
-  width: 320px;
+  max-width: 375px;
   margin: 0 auto;
   padding-bottom: 100px;
 
   @media (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media (min-width: 1280px) {
-    width: 1280px;
+    max-width: 1280px;
     padding-bottom: 120px;
   }
 `;
@@ -30,13 +30,12 @@ export const Svg = styled(QuotesSvg)`
 `;
 
 export const StyledSliderRewievs = styled(Slider)`
-  & .slick-slide div {
+  & .slick-slide > div {
     width: 240px;
-    height: 233px;
+
     margin: 0 8px;
     @media (min-width: 768px) {
       width: 372px;
-      height: 300px;
     }
 
     @media (min-width: 1280px) {
@@ -44,13 +43,6 @@ export const StyledSliderRewievs = styled(Slider)`
     }
   }
 
-  & .slick-track {
-    margin: 0 -8px;
-
-    @media (min-width: 1280px) {
-      margin: auto;
-    }
-  }
   & .slick-next {
     width: 10px;
     top: 260px;
@@ -63,8 +55,8 @@ export const StyledSliderRewievs = styled(Slider)`
 
     @media (min-width: 1280px) {
       width: 20px;
-      top: 490px;
-      right: 459px;
+      top: 340px;
+      right: 513px;
     }
   }
 
@@ -80,14 +72,20 @@ export const StyledSliderRewievs = styled(Slider)`
 
     @media (min-width: 1280px) {
       width: 20px;
-      top: 490px;
-      left: 459px;
+      top: 340px;
+      left: 513px;
     }
   }
 `;
 
 export const StyledReview = styled.div`
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 233px;
   padding: 24px 16px;
+
   border-radius: 24px;
   background: var(--light-pink);
 
@@ -97,5 +95,25 @@ export const StyledReview = styled.div`
 
   & .name {
     font-style: italic;
+  }
+
+  & .bottomWrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 300px;
+
+    padding: 16px 48px;
+
+    font-size: 20px;
   }
 `;

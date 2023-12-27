@@ -26,7 +26,7 @@ export const settingsVariants = {
   className: "slider center",
 
   dots: false,
-  infinite: false,
+  infinite: true,
   adaptiveHeight: true,
   speed: 500,
   slidesToShow: 3,

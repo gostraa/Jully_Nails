@@ -8,6 +8,7 @@ import {
   Svg,
 } from "./Reviews.styled";
 import { CommonTitle } from "constants/commonStyles";
+import Avatar from "../../images/avatar.jpg";
 
 const Reviews = ({ t }) => {
   return (
@@ -16,10 +17,14 @@ const Reviews = ({ t }) => {
       <StyledSliderRewievs {...settingsVariants}>
         {reviews.map(comment => (
           <StyledReview>
-            <Svg />
-            <p className="comment">{t(`${comment.comment}`)}</p>
-
-            <p className="name">{comment.name}</p>
+            <div>
+              <Svg />
+              <p className="comment">{t(`${comment.comment}`)}</p>
+            </div>
+            <div className="bottomWrap">
+              <img src={Avatar} alt="avatar" />
+              <p className="name">{comment.name}</p>
+            </div>
           </StyledReview>
         ))}
       </StyledSliderRewievs>
