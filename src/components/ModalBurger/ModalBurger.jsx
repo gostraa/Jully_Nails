@@ -1,7 +1,13 @@
 import { useEffect } from "react";
-import { BackdropModal, CrossButton } from "./ModalBurger.styled";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
+
+import {
+  BackdropModal,
+  CrossButton,
+  BurgerMenu,
+  MenuList,
+} from "./ModalBurger.styled";
 
 const modal = document.querySelector("#modal");
 
@@ -19,12 +25,14 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
 
   return createPortal(
     <BackdropModal onClick={handleBackdropClick}>
-      {menu.map(({ menu }) => (
-        <ul key={menu}>
-          <li>{t(menu)}</li>
-        </ul>
-      ))}
-      <CrossButton onClick={closeModal} />
+      <BurgerMenu>
+        <MenuList>
+          {menu.map(({ menu }) => (
+            <li>{t(menu)}</li>
+          ))}
+        </MenuList>
+        <CrossButton onClick={closeModal} />
+      </BurgerMenu>
     </BackdropModal>,
     modal
   );

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const BackdropModal = styled.div`
   width: 100vw;
@@ -7,9 +7,34 @@ export const BackdropModal = styled.div`
   top: 0px;
   left: 0px;
   overscroll-behavior: contain;
-  background: rgba(34, 13, 91, 0.23);
+  background: var(--burger-modal);
 `;
 
-export const Modal = styled.div``;
+const fadeIn = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+`;
 
-export const Translation = styled.button``;
+export const Modal = styled.div`
+  padding: 12px;
+  position: absolute;
+  top: 40px;
+  right: calc(50% - 142px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px 0px 12px 12px;
+  background-color: var(--light-white);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: ${fadeIn} 1.5s ease-in-out;
+  gap: 10px;
+`;
+
+export const Translation = styled.button`
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+`;

@@ -9,10 +9,13 @@ export const HeaderContainer = styled.div`
   align-items: center;
 
   width: 320px;
-  padding: 16px 16px 30px;
+  padding: 16px 16px 20px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
+    border-top: 1px solid var(--header-border);
+    border-bottom: 1px solid var(--header-border);
+    margin-top: 32px;
     width: 768px;
     padding: 16px 40px 40px;
   }
@@ -23,10 +26,16 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.div``;
+export const LogoContainer = styled.div`
+  display: flex;
+  gap: 10px;
+`;
 
 export const BurgerMenu = styled(Burger)`
   cursor: pointer;
 `;
 
-export const LogoSVG = styled(Logo)``;
+export const LogoSVG = styled(Logo)`
+  width: 35px;
+  height: 24px;
+`;

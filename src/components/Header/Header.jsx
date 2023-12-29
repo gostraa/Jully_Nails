@@ -1,8 +1,10 @@
 import React from "react";
 
 import TranslationPanel from "components/TransitionPanel/TransitionPanel";
+import ModalBurger from "components/ModalBurger/ModalBurger";
 
 import useWindowWidth from "hooks/useWindowWidth";
+import useToggleModal from "hooks/useToggleModal";
 
 import {
   BurgerMenu,
@@ -10,8 +12,6 @@ import {
   LogoContainer,
   LogoSVG,
 } from "./Header.styled";
-import useToggleModal from "hooks/useToggleModal";
-import ModalBurger from "components/ModalBurger/ModalBurger";
 
 const Header = () => {
   const windowWidth = useWindowWidth();

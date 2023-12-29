@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const MobileTranslation = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   cursor: pointer;
 `;
 
@@ -19,4 +23,7 @@ export const TraslationList = styled.ul`
 
 export const TraslationItem = styled.li``;
 
-export const TraslationButton = styled.button``;
+export const TraslationButton = styled.button`
+  background-color: transparent;
+  border: 0px;
+`;

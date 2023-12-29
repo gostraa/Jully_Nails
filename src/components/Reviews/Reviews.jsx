@@ -15,8 +15,8 @@ const Reviews = ({ t }) => {
     <ReviewsSection>
       <CommonTitle>{t("reviews")}</CommonTitle>
       <StyledSliderRewievs {...settingsVariants}>
-        {reviews.map(comment => (
-          <StyledReview>
+        {reviews.map((comment, index) => (
+          <StyledReview key={index}>
             <div>
               <Svg />
               <p className="comment">{t(`${comment.comment}`)}</p>

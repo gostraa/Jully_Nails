@@ -1,5 +1,13 @@
-import { ReactComponent as ArrowLeft } from "../images/svg/arrowLeft.svg";
-import { ReactComponent as ArrowRight } from "../images/svg/arrowRight.svg";
+import { ReactComponent as ArrowLeftSvg } from "../images/svg/arrowLeft.svg";
+import { ReactComponent as ArrowRightSvg } from "../images/svg/arrowRight.svg";
+
+const ArrowRight = ({ currentSlide, slideCount, ...props }) => {
+  return <ArrowRightSvg {...props} />;
+};
+
+const ArrowLeft = ({ currentSlide, slideCount, ...props }) => {
+  return <ArrowLeftSvg {...props} />;
+};
 
 export const settings = {
   className: "slider center",

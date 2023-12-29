@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import { ReactComponent as Cross } from "images/svg/cross.svg";
 
@@ -9,7 +9,39 @@ export const BackdropModal = styled.div`
   top: 0px;
   left: 0px;
   overscroll-behavior: contain;
-  background: rgba(34, 13, 91, 0.23);
+  background: var(--burger-modal);
 `;
 
-export const CrossButton = styled(Cross)``;
+export const CrossButton = styled(Cross)`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+`;
+
+const fadeIn = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+`;
+
+export const BurgerMenu = styled.div`
+  position: absolute;
+  width: 180px;
+  height: 145px;
+  left: calc(50% - 143px);
+  top: 15px;
+  border-radius: 0px 24px 24px;
+  background-color: var(--light-white);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  animation: ${fadeIn} 1.5s ease-in-out;
+`;
+
+export const MenuList = styled.ul`
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+`;

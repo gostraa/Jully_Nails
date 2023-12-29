@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
+
 import { BackdropModal, Modal, Translation } from "./ModalTranslation.styled";
 
 const modal = document.querySelector("#modal");

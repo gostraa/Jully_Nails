@@ -21,8 +21,8 @@ const Diploms = ({ t }) => {
     <DiplomsSection>
       <CommonTitle>{t("diplomes")}</CommonTitle>
       <DiplomsWrapper className="diploms-gallery">
-        {diplomsData.map(diplom => (
-          <DiplomThumb>
+        {diplomsData.map((diplom, index) => (
+          <DiplomThumb key={index}>
             <a href={diplom.original}>
               <img src={diplom.thumbnail} alt="diplome" />
             </a>
