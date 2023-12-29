@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Jully_Nails/static/css/main.1afe2508.css",
-    "main.js": "/Jully_Nails/static/js/main.3f6a77a5.js",
+    "main.css": "/Jully_Nails/static/css/main.568ec5b8.css",
+    "main.js": "/Jully_Nails/static/js/main.f4b5dc3d.js",
     "static/media/2.jpg": "/Jully_Nails/static/media/2.86f2305e1b183b4b1493.jpg",
     "static/media/mainfoto.png": "/Jully_Nails/static/media/mainfoto.73e5d68e1ac1eefd98e1.png",
     "static/media/logo.svg": "/Jully_Nails/static/media/logo.e50d4ece4495a168800290336dbb168a.svg",
@@ -37,11 +37,11 @@
     "static/media/burger.svg": "/Jully_Nails/static/media/burger.60d146269cdec496323d20569c881508.svg",
     "static/media/arrowLeft.svg": "/Jully_Nails/static/media/arrowLeft.97a863f75054adcbf57603c591d149dc.svg",
     "static/media/arrowRight.svg": "/Jully_Nails/static/media/arrowRight.23e1811253ca1c6de8d2079247eb7a5e.svg",
-    "main.1afe2508.css.map": "/Jully_Nails/static/css/main.1afe2508.css.map",
-    "main.3f6a77a5.js.map": "/Jully_Nails/static/js/main.3f6a77a5.js.map"
+    "main.568ec5b8.css.map": "/Jully_Nails/static/css/main.568ec5b8.css.map",
+    "main.f4b5dc3d.js.map": "/Jully_Nails/static/js/main.f4b5dc3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1afe2508.css",
-    "static/js/main.3f6a77a5.js"
+    "static/css/main.568ec5b8.css",
+    "static/js/main.f4b5dc3d.js"
   ]
 }
