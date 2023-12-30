@@ -9,8 +9,8 @@ const Navbar = () => {
 
   return (
     <MenuList>
-      {menu.map(({ menu }) => (
-        <MenuItem>{t(menu)}</MenuItem>
+      {menu.map(({ menu }, idx) => (
+        <MenuItem key={idx}>{t(menu)}</MenuItem>
       ))}
     </MenuList>
   );

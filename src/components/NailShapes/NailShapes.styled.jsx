@@ -8,16 +8,15 @@ export const StyledWrapper = styled.section`
   max-width: 375px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 92px;
 
   @media (min-width: 768px) {
     max-width: 768px;
-    padding-bottom: 80px;
+    padding-bottom: 112px;
   }
 
   @media (min-width: 1280px) {
     max-width: 1280px;
-
     padding-bottom: 120px;
   }
 `;
@@ -26,6 +25,7 @@ export const SliderWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 70px;
+
   @media (min-width: 1280px) {
     gap: 60px;
   }
