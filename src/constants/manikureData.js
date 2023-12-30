@@ -13,9 +13,9 @@ import img9 from "../images/manikure/9.jpg";
 
 // manikureVariants
 
-import oval1 from "../images/forms/Oval/1.jpg";
-import oval2 from "../images/forms/Oval/2.jpg";
-import oval3 from "../images/forms/Oval/3.jpg";
+import oval1 from "../images/forms/oval/1.jpg";
+import oval2 from "../images/forms/oval/2.jpg";
+import oval3 from "../images/forms/oval/3.jpg";
 
 import squoval1 from "../images/forms/Squoval/1.jpg";
 import squoval2 from "../images/forms/Squoval/2.jpg";
