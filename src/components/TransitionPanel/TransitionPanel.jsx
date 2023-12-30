@@ -7,13 +7,12 @@ import ModalTranslation from "components/ModalTranslation/ModalTranslation";
 import useWindowWidth from "hooks/useWindowWidth";
 import useToggleModal from "hooks/useToggleModal";
 
-import { ReactComponent as Globe } from "images/svg/global.svg";
 import { ReactComponent as ArrowDown } from "images/svg/arrowDown.svg";
 
 import {
+  Globe,
   MobileTranslation,
   TraslationButton,
-  TraslationItem,
   TraslationList,
 } from "./TransitionPanel.styled";
 
@@ -50,7 +49,7 @@ const TranslationPanel = () => {
   const { isOpen, openModal, handleKeyDown, closeModal, handleBackdropClick } =
     useToggleModal();
 
-  return windowWidth === "isMobile" ? (
+  return windowWidth !== "isDesktop" ? (
     <>
       <MobileTranslation onClick={() => openModal()}>
         <Globe />
@@ -70,7 +69,7 @@ const TranslationPanel = () => {
   ) : (
     <TraslationList>
       {languages.map(({ code, label }) => (
-        <TraslationItem key={code}>
+        <li key={code}>
           <TraslationButton
             onClick={() => {
               changeLanguage(code);
@@ -79,7 +78,7 @@ const TranslationPanel = () => {
           >
             {t(label)}
           </TraslationButton>
-        </TraslationItem>
+        </li>
       ))}
     </TraslationList>
   );

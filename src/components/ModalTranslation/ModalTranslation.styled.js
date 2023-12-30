@@ -31,10 +31,21 @@ export const Modal = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   animation: ${fadeIn} 1.5s ease-in-out;
   gap: 10px;
+
+  @media (min-width: 768px) {
+    padding: 20px;
+    top: 60px;
+    right: calc(50% - 345px);
+  }
 `;
 
 export const Translation = styled.button`
   background-color: transparent;
   border: 0px;
   cursor: pointer;
+  font-size: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 `;

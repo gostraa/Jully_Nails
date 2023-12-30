@@ -12,6 +12,7 @@ import {
   LogoContainer,
   LogoSVG,
 } from "./Header.styled";
+import Navbar from "components/Navbar/Navbar";
 
 const Header = () => {
   const windowWidth = useWindowWidth();
@@ -27,7 +28,9 @@ const Header = () => {
             <BurgerMenu onClick={() => openModal()} />
           )}
           <LogoSVG />
+          <div></div>
         </LogoContainer>
+        {windowWidth !== "isMobile" && <Navbar />}
         <TranslationPanel />
       </HeaderContainer>
       {isOpen && (

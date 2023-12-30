@@ -6,30 +6,20 @@ import { NailShapes } from "components/NailShapes/NailShapes";
 import Diploms from "components/Diploms/Diploms";
 import Reviews from "components/Reviews/Reviews";
 
-import useWindowWidth from "hooks/useWindowWidth";
-
-import { MobileBackground } from "./App.styled";
+import { Background } from "./App.styled";
 
 function App() {
   const { t } = useTranslation();
 
-  const windowWidth = useWindowWidth();
-
-  const Content = (
-    <>
+  return (
+    <Background>
       <Header />
       <Hero t={t} />
       <Manikure t={t} />
       <NailShapes t={t} />
       <Diploms t={t} />
       <Reviews t={t} />
-    </>
-  );
-
-  return windowWidth === "isMobile" ? (
-    <MobileBackground>{Content}</MobileBackground>
-  ) : (
-    <>{Content}</>
+    </Background>
   );
 }
 

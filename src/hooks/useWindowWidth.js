@@ -11,7 +11,7 @@ const useWindowWidth = () => {
         setWindowWidth("isMobile");
       } else if (windowSize < 1280) {
         setWindowWidth("isTablet");
-      } else if (windowSize >= 1024) {
+      } else if (windowSize >= 1280) {
         setWindowWidth("isDesktop");
       }
     };

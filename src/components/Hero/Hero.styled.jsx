@@ -6,6 +6,7 @@ export const Container = styled.section`
   padding: 0 50px 60px 50px;
 
   @media screen and (min-width: 768px) {
+    margin-top: 24px;
     max-width: 768px;
     padding: 0 148px 80px 148px;
   }
