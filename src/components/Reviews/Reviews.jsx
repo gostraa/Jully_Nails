@@ -12,7 +12,7 @@ import Avatar from "../../images/avatar.jpg";
 
 const Reviews = ({ t }) => {
   return (
-    <ReviewsSection>
+    <ReviewsSection id="reviews">
       <CommonTitle>{t("reviews")}</CommonTitle>
       <StyledSliderRewievs {...settingsVariants}>
         {reviews.map((comment, index) => (

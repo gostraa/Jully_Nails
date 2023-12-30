@@ -7,6 +7,7 @@ import {
   CrossButton,
   BurgerMenu,
   MenuList,
+  MenuItem,
 } from "./ModalBurger.styled";
 
 const modal = document.querySelector("#modal");
@@ -28,7 +29,7 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
       <BurgerMenu>
         <MenuList>
           {menu.map(({ menu }) => (
-            <li>{t(menu)}</li>
+            <MenuItem>{t(menu)}</MenuItem>
           ))}
         </MenuList>
         <CrossButton onClick={closeModal} />

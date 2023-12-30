@@ -12,7 +12,7 @@ import { CommonTitle } from "constants/commonStyles";
 
 export const NailShapes = ({ t }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="nailShapes">
       <CommonTitle>{t("nailShapes")}</CommonTitle>
       <SliderWrapper>
         {manikureVariants.map((variant, index) => {

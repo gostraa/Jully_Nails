@@ -11,7 +11,7 @@ import { CommonTitle } from "constants/commonStyles";
 
 const Manikure = ({ t }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="manicure">
       <CommonTitle>{t("manicure")}</CommonTitle>
       <StyledSlideList {...settings}>
         {manikureImg.map((img, idx) => {

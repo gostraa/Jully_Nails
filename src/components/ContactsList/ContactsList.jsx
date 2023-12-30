@@ -1,16 +1,16 @@
 import {
+  Facebook,
+  Instagram,
+  Map,
+  Phone,
   StyledList,
   StyledListLink,
   StyledPSub,
 } from "components/Hero/Hero.styled";
-import { ReactComponent as Phone } from "../../images/svg/phone.svg";
-import { ReactComponent as Map } from "../../images/svg/map.svg";
-import { ReactComponent as Instagram } from "../../images/svg/insta.svg";
-import { ReactComponent as Facebook } from "../../images/svg/facebook.svg";
 
-const ContactsList = () => {
+const ContactsList = ({ isFooter }) => {
   return (
-    <StyledList>
+    <StyledList isFooter={isFooter}>
       <li>
         <div>
           <Phone />

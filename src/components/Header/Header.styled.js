@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ReactComponent as Burger } from "images/svg/burger.svg";
 import { ReactComponent as Logo } from "images/svg/logo.svg";
 
-export const Background = styled.div`
+export const Background = styled.header`
   @media (min-width: 768px) {
     background: var(--light-white);
   }

@@ -11,7 +11,7 @@ const Price = ({ t }) => {
   const serviceList = service;
 
   return (
-    <PriceContainer>
+    <PriceContainer id="price">
       <PriceTitle>{t("price")}</PriceTitle>
       <ul>
         {serviceList.map(({ serviceItem, priceItem }, idx) => (

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 import { MenuList, MenuItem } from "./Navbar.styled";
 
@@ -10,7 +11,16 @@ const Navbar = () => {
   return (
     <MenuList>
       {menu.map(({ menu }, idx) => (
-        <MenuItem key={idx}>{t(menu)}</MenuItem>
+        <Link
+          activeClass="active"
+          to={menu}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          <MenuItem key={idx}>{t(menu)}</MenuItem>
+        </Link>
       ))}
     </MenuList>
   );

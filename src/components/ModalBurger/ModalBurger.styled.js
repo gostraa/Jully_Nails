@@ -16,6 +16,7 @@ export const CrossButton = styled(Cross)`
   position: absolute;
   top: 16px;
   right: 16px;
+  cursor: pointer;
 `;
 
 const fadeIn = keyframes`
@@ -44,4 +45,8 @@ export const MenuList = styled.ul`
   display: flex;
   gap: 16px;
   flex-direction: column;
+`;
+
+export const MenuItem = styled.li`
+  cursor: pointer;
 `;

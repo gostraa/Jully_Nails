@@ -18,7 +18,7 @@ const Diploms = ({ t }) => {
   }, []);
 
   return (
-    <DiplomsSection>
+    <DiplomsSection id="diplomes">
       <CommonTitle>{t("diplomes")}</CommonTitle>
       <DiplomsWrapper className="diploms-gallery">
         {diplomsData.map((diplom, index) => (

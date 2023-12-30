@@ -13,6 +13,7 @@
   --burger-modal: rgba(236, 220, 221, 0.4);
   --header-border: rgba(160, 94, 92, 0.3);
   --header-line: #d9d9d9;
+  --footer-black: #000;
 
   --secondary-font: "Marck Script", sans-serif;
   --title-font: "Lato", sans-serif;
@@ -20,10 +21,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {

@@ -1,5 +1,25 @@
 import styled from "styled-components";
 
+import { ReactComponent as PhoneSVG } from "../../images/svg/phone.svg";
+import { ReactComponent as MapSVG } from "../../images/svg/map.svg";
+import { ReactComponent as InstagramSVG } from "../../images/svg/insta.svg";
+import { ReactComponent as FacebookSVG } from "../../images/svg/facebook.svg";
+
+const createStyledIcon = IconSVG => styled(IconSVG)`
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+`;
+
+export const Phone = createStyledIcon(PhoneSVG);
+export const Map = createStyledIcon(MapSVG);
+export const Instagram = createStyledIcon(InstagramSVG);
+export const Facebook = createStyledIcon(FacebookSVG);
+
 export const Container = styled.section`
   margin: 0 auto;
   max-width: 320px;
@@ -62,6 +82,7 @@ export const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: ${({ isFooter }) => (isFooter ? "center" : "normal")};
 
   & li {
     display: flex;
@@ -70,8 +91,16 @@ export const StyledList = styled.ul`
   }
 
   @media screen and (min-width: 768px) {
+    align-items: normal;
+
     & li {
       gap: 8px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    & li {
+      gap: 16px;
     }
   }
 `;
