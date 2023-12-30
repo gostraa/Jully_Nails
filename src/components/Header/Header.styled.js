@@ -3,7 +3,14 @@ import styled from "styled-components";
 import { ReactComponent as Burger } from "images/svg/burger.svg";
 import { ReactComponent as Logo } from "images/svg/logo.svg";
 
+export const Background = styled.div`
+  @media (min-width: 768px) {
+    background: var(--light-white);
+  }
+`;
+
 export const HeaderContainer = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -22,11 +29,28 @@ export const HeaderContainer = styled.div`
   }
 
   @media (min-width: 768px) {
-    border-top: 1px solid var(--header-border);
-    border-bottom: 1px solid var(--header-border);
-    width: 768px;
+    min-width: 768px;
     padding: 16px 40px;
     background: var(--light-white);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      border: 1px solid var(--header-border);
+      left: 50%;
+    }
+
+    &::before {
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: translateX(-50%);
+    }
   }
 
   @media (min-width: 1280px) {

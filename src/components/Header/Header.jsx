@@ -2,6 +2,7 @@ import React from "react";
 
 import TranslationPanel from "components/TransitionPanel/TransitionPanel";
 import ModalBurger from "components/ModalBurger/ModalBurger";
+import Navbar from "components/Navbar/Navbar";
 
 import useWindowWidth from "hooks/useWindowWidth";
 import useToggleModal from "hooks/useToggleModal";
@@ -11,8 +12,8 @@ import {
   HeaderContainer,
   LogoContainer,
   LogoSVG,
+  Background,
 } from "./Header.styled";
-import Navbar from "components/Navbar/Navbar";
 
 const Header = () => {
   const windowWidth = useWindowWidth();
@@ -22,17 +23,19 @@ const Header = () => {
 
   return (
     <>
-      <HeaderContainer>
-        <LogoContainer>
-          {windowWidth === "isMobile" && (
-            <BurgerMenu onClick={() => openModal()} />
-          )}
-          <LogoSVG />
-          <div></div>
-        </LogoContainer>
-        {windowWidth !== "isMobile" && <Navbar />}
-        <TranslationPanel />
-      </HeaderContainer>
+      <Background>
+        <HeaderContainer>
+          <LogoContainer>
+            {windowWidth === "isMobile" && (
+              <BurgerMenu onClick={() => openModal()} />
+            )}
+            <LogoSVG />
+            <div></div>
+          </LogoContainer>
+          {windowWidth !== "isMobile" && <Navbar />}
+          <TranslationPanel />
+        </HeaderContainer>
+      </Background>
       {isOpen && (
         <ModalBurger
           handleKeyDown={handleKeyDown}
