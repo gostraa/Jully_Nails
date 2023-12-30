@@ -6,21 +6,32 @@ import {
   StyledList,
   StyledListLink,
   StyledPSub,
+  StyledLinks,
 } from "components/Hero/Hero.styled";
 
 const ContactsList = ({ isFooter }) => {
+  const social = [
+    { messanger: "Viber", link: "#" },
+    { messanger: "WhatsApp", link: "#" },
+    { messanger: "Telegram", link: "#" },
+  ];
+
   return (
     <StyledList isFooter={isFooter}>
       <li>
         <div>
           <Phone />
         </div>
-        <div>
-          <StyledListLink href="tel:+421 951 508 387">
-            +421 951 508 387
-          </StyledListLink>
-          <StyledPSub>Viber, WhatsApp, Telegram</StyledPSub>
-        </div>
+        <StyledListLink href="tel:+421 951 508 387">
+          +421 951 508 387
+        </StyledListLink>
+        <StyledPSub>
+          {social.map(({ messanger, link }, idx) => (
+            <StyledLinks href={link} key={idx}>
+              {messanger}
+            </StyledLinks>
+          ))}
+        </StyledPSub>
       </li>
       <li>
         <div>
