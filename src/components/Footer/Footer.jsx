@@ -32,12 +32,13 @@ const Footer = ({ t }) => {
               smooth={true}
               offset={-70}
               duration={1000}
+              key={idx}
             >
-              <FooterNavItem key={idx}>{t(menu)}</FooterNavItem>
+              <FooterNavItem>{t(menu)}</FooterNavItem>
             </Link>
           ))}
         </FooterNav>
-        <ContactsList isFooter={true} />
+        <ContactsList $isFooter={true} />
       </FooterContainer>
     </FooterBackground>
   );

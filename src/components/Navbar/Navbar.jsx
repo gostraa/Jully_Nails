@@ -18,8 +18,9 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={1000}
+          key={idx}
         >
-          <MenuItem key={idx}>{t(menu)}</MenuItem>
+          <MenuItem>{t(menu)}</MenuItem>
         </Link>
       ))}
     </MenuList>

@@ -82,7 +82,7 @@ export const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  align-items: ${({ isFooter }) => (isFooter ? "center" : "normal")};
+  align-items: ${({ $isFooter }) => ($isFooter ? "center" : "normal")};
 
   & li {
     display: flex;
@@ -125,7 +125,7 @@ export const StyledPSub = styled.ul`
   line-height: 1.25;
   margin-top: 3px;
   display: flex;
-  flex-direction: column;
+
   gap: 8px;
   align-content: flex-start;
   flex-wrap: wrap;

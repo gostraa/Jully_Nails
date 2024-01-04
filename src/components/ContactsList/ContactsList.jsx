@@ -9,15 +9,15 @@ import {
   StyledLinks,
 } from "components/Hero/Hero.styled";
 
-const ContactsList = ({ isFooter }) => {
+const ContactsList = ({ $isFooter }) => {
   const social = [
-    { messanger: "Viber", link: "#" },
+    { messanger: "Viber", link: "viber://chat?number=%2B421951508387" },
     { messanger: "WhatsApp", link: "#" },
     { messanger: "Telegram", link: "#" },
   ];
 
   return (
-    <StyledList isFooter={isFooter}>
+    <StyledList $isFooter={$isFooter}>
       <li>
         <div>
           <Phone />
