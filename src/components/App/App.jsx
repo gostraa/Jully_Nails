@@ -10,6 +10,7 @@ import Price from "components/Price/Price";
 import Footer from "components/Footer/Footer";
 
 import { Background } from "./App.styled";
+import Preload from "components/Preload/Preload";
 
 function App() {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ function App() {
     <Background>
       <Header />
       <Hero t={t} />
+      <Preload />
       <Manikure t={t} />
       <NailShapes t={t} />
       <Price t={t} />
