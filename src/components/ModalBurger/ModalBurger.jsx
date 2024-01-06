@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 import {
   BackdropModal,
@@ -37,7 +38,17 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
         <BurgerMenu>
           <MenuList>
             {modalMenu.map(({ menu }, index) => (
-              <MenuItem key={index}>{t(menu)}</MenuItem>
+              <Link
+                activeClass="active"
+                to={menu}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+                key={index}
+              >
+                <MenuItem>{t(menu)}</MenuItem>
+              </Link>
             ))}
           </MenuList>
           <CrossButton onClick={closeModal} />

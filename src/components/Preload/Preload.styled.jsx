@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const PreloadStyles = styled(motion.div)`
+export const PreloadStyles = styled(motion.div)`
   .logo {
     width: 300px;
     height: 100px;
@@ -33,26 +33,3 @@ export const PreloadOverlay = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-const container = {
-  initial: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      duration: 1.5,
-    },
-  },
-};
-
-const PreloadComponent = ({ children, setComplete }) => (
-  <PreloadStyles
-    variants={container}
-    initial="initial"
-    animate="show"
-    onAnimationComplete={() => setComplete()}
-  >
-    {children}
-  </PreloadStyles>
-);
-
-export default PreloadComponent;

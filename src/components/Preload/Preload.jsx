@@ -1,31 +1,31 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
-
+import { AnimatePresence } from "framer-motion";
 import { ReactComponent as Logo } from "../../images/svg/logo.svg";
-import PreloadComponent, { PreloadOverlay } from "./Preload.styled";
-
-const animationVariants = {
-  initial: { opacity: 1 },
-  show: {
-    opacity: 0,
-    transition: {
-      delay: 2,
-      duration: 1.5,
-    },
-  },
-};
+import { useEffect, useState } from "react";
+import { PreloadOverlay, PreloadStyles } from "./Preload.styled";
 
 const Preload = () => {
-  const [isAnimationComplete, setAnimationComplete] = useState(false);
+  const [showPreload, setShowPreload] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPreload(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <PreloadOverlay $isComplete={isAnimationComplete}>
-      <PreloadComponent setComplete={() => setAnimationComplete(true)}>
-        <motion.div variants={animationVariants}>
-          <Logo className="logo" />
-        </motion.div>
-      </PreloadComponent>
-    </PreloadOverlay>
+    <AnimatePresence>
+      {showPreload && (
+        <PreloadOverlay>
+          <PreloadStyles
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
+          >
+            <Logo className="logo" />
+          </PreloadStyles>
+        </PreloadOverlay>
+      )}
+    </AnimatePresence>
   );
 };
 
