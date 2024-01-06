@@ -10,6 +10,7 @@ import {
   MenuList,
   MenuItem,
 } from "./ModalBurger.styled";
+import { menuModal } from "constants/constants";
 
 const modal = document.querySelector("#modal");
 
@@ -23,7 +24,7 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
 
   const { t } = useTranslation();
 
-  const menu = [{ menu: "diplomes" }, { menu: "price" }, { menu: "reviews" }];
+  const modalMenu = menuModal;
 
   return createPortal(
     <motion.div
@@ -35,7 +36,7 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
       <BackdropModal onClick={handleBackdropClick}>
         <BurgerMenu>
           <MenuList>
-            {menu.map(({ menu }, index) => (
+            {modalMenu.map(({ menu }, index) => (
               <MenuItem key={index}>{t(menu)}</MenuItem>
             ))}
           </MenuList>

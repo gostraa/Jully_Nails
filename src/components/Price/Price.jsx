@@ -1,4 +1,5 @@
-import { service } from "constants/service";
+import { service } from "constants/constants";
+
 import {
   PriceContainer,
   PriceTitle,

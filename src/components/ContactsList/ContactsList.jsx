@@ -1,3 +1,5 @@
+import { social } from "constants/constants";
+
 import {
   Facebook,
   Instagram,
@@ -10,11 +12,7 @@ import {
 } from "components/Hero/Hero.styled";
 
 const ContactsList = ({ $isFooter }) => {
-  const social = [
-    { messanger: "Viber", link: "viber://chat/?number=%2B421951508387" },
-    { messanger: "WhatsApp", link: "https://wa.me/message/4IGCOM2O7JMCO1" },
-    { messanger: "Telegram", link: "https://t.me/Jully_nails" },
-  ];
+  const socialLink = social;
 
   return (
     <StyledList $isFooter={$isFooter}>
@@ -30,7 +28,7 @@ const ContactsList = ({ $isFooter }) => {
           +421 951 508 387
         </StyledListLink>
         <StyledPSub>
-          {social.map(({ messanger, link }, idx) => (
+          {socialLink.map(({ messanger, link }, idx) => (
             <StyledLinks
               href={link}
               key={idx}

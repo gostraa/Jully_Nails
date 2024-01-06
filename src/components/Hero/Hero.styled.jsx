@@ -34,7 +34,7 @@ export const Container = styled.section`
     display: flex;
     gap: 46px;
     max-width: 1280px;
-    padding: 0 130px 120px 130px;
+    padding: 0 130px 0px 130px;
   }
 `;
 

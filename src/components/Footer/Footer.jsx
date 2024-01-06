@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 
 import ContactsList from "components/ContactsList/ContactsList";
+import { menu } from "constants/constants";
 
 import {
   FooterBackground,
@@ -11,20 +12,14 @@ import {
 } from "./Footer.styled";
 
 const Footer = ({ t }) => {
-  const menu = [
-    { menu: "manicure" },
-    { menu: "nailShapes" },
-    { menu: "diplomes" },
-    { menu: "price" },
-    { menu: "reviews" },
-  ];
+  const footerMenu = menu;
 
   return (
     <FooterBackground>
       <FooterContainer>
         <Logo />
         <FooterNav>
-          {menu.map(({ menu }, idx) => (
+          {footerMenu.map(({ menu }, idx) => (
             <Link
               activeClass="active"
               to={menu}

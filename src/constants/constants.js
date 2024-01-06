@@ -64,3 +64,42 @@ export const settingsVariants = {
     },
   ],
 };
+
+export const social = [
+  { messanger: "Viber", link: "viber://chat/?number=%2B421951508387" },
+  { messanger: "WhatsApp", link: "https://wa.me/message/4IGCOM2O7JMCO1" },
+  { messanger: "Telegram", link: "https://t.me/Jully_nails" },
+];
+
+export const menu = [
+  { menu: "manicure" },
+  { menu: "nailShapes" },
+  { menu: "price" },
+  { menu: "diplomes" },
+  { menu: "reviews" },
+];
+
+export const menuModal = [
+  { menu: "price" },
+  { menu: "diplomes" },
+  { menu: "reviews" },
+];
+
+export const menuHeader = [
+  { menu: "price" },
+  { menu: "diplomes" },
+  { menu: "reviews" },
+];
+
+export const service = [
+  { serviceItem: "manicure", priceItem: "10€" },
+  { serviceItem: "manicureWithStrengthening", priceItem: "20-25€" },
+  { serviceItem: "buildingUp", priceItem: "30€" },
+  { serviceItem: "removalWithout", priceItem: "5€" },
+  { serviceItem: "removalWith", priceItem: "2€" },
+  { serviceItem: "french", priceItem: "+5€" },
+  { serviceItem: "rubbing", priceItem: "+1€" },
+  { serviceItem: "stones", priceItem: "1€" },
+  { serviceItem: "stickers", priceItem: "free" },
+  { serviceItem: "simpleDesign", priceItem: "free" },
+];

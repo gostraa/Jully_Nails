@@ -2,15 +2,16 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 import { MenuList, MenuItem } from "./Navbar.styled";
+import { menuHeader } from "constants/constants";
 
 const Navbar = () => {
   const { t } = useTranslation();
 
-  const menu = [{ menu: "diplomes" }, { menu: "price" }, { menu: "reviews" }];
+  const headerMenu = menuHeader;
 
   return (
     <MenuList>
-      {menu.map(({ menu }, idx) => (
+      {headerMenu.map(({ menu }, idx) => (
         <Link
           activeClass="active"
           to={menu}
