@@ -1,4 +1,4 @@
-import React from "react";
+import { AnimatePresence } from "framer-motion";
 
 import TranslationPanel from "components/TransitionPanel/TransitionPanel";
 import ModalBurger from "components/ModalBurger/ModalBurger";
@@ -36,13 +36,15 @@ const Header = () => {
           <TranslationPanel />
         </HeaderContainer>
       </Background>
-      {isOpen && (
-        <ModalBurger
-          handleKeyDown={handleKeyDown}
-          handleBackdropClick={handleBackdropClick}
-          closeModal={closeModal}
-        />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <ModalBurger
+            handleKeyDown={handleKeyDown}
+            handleBackdropClick={handleBackdropClick}
+            closeModal={closeModal}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 import ModalTranslation from "components/ModalTranslation/ModalTranslation";
 
@@ -56,15 +57,17 @@ const TranslationPanel = () => {
         <TraslationButton>{t(currentLanguageLabel?.label)}</TraslationButton>
         <ArrowDown />
       </MobileTranslation>
-      {isOpen && (
-        <ModalTranslation
-          handleKeyDown={handleKeyDown}
-          handleBackdropClick={handleBackdropClick}
-          otherLanguage={otherLanguage}
-          onChange={changeLanguage}
-          closeModal={closeModal}
-        />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <ModalTranslation
+            handleKeyDown={handleKeyDown}
+            handleBackdropClick={handleBackdropClick}
+            otherLanguage={otherLanguage}
+            onChange={changeLanguage}
+            closeModal={closeModal}
+          />
+        )}
+      </AnimatePresence>
     </>
   ) : (
     <TraslationList>

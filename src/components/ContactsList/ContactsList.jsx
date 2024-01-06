@@ -11,9 +11,9 @@ import {
 
 const ContactsList = ({ $isFooter }) => {
   const social = [
-    { messanger: "Viber", link: "viber://chat?number=%2B421951508387" },
-    { messanger: "WhatsApp", link: "#" },
-    { messanger: "Telegram", link: "#" },
+    { messanger: "Viber", link: "viber://chat/?number=%2B421951508387" },
+    { messanger: "WhatsApp", link: "https://wa.me/message/4IGCOM2O7JMCO1" },
+    { messanger: "Telegram", link: "https://t.me/Jully_nails" },
   ];
 
   return (
@@ -22,12 +22,21 @@ const ContactsList = ({ $isFooter }) => {
         <div>
           <Phone />
         </div>
-        <StyledListLink href="tel:+421 951 508 387">
+        <StyledListLink
+          href="tel:+421 951 508 387"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           +421 951 508 387
         </StyledListLink>
         <StyledPSub>
           {social.map(({ messanger, link }, idx) => (
-            <StyledLinks href={link} key={idx}>
+            <StyledLinks
+              href={link}
+              key={idx}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {messanger}
             </StyledLinks>
           ))}
@@ -40,7 +49,7 @@ const ContactsList = ({ $isFooter }) => {
         <StyledListLink
           href="https://www.google.com/maps?q=Jeruzalemská 324/33, 91701 Trnava"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Jeruzalemská 324/33, 91701 Trnava
         </StyledListLink>
@@ -49,13 +58,25 @@ const ContactsList = ({ $isFooter }) => {
         <div>
           <Instagram />
         </div>
-        <StyledListLink>jully_kasianenko_nails</StyledListLink>
+        <StyledListLink
+          href="https://www.instagram.com/jully_kasianenko_nails?igsh=a25kc2hxZ3p5NXo4&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          jully_kasianenko_nails
+        </StyledListLink>
       </li>
       <li>
         <div>
           <Facebook />
         </div>
-        <StyledListLink>JullyKasianenko Manikurá Trnava</StyledListLink>
+        <StyledListLink
+          href="https://www.facebook.com/profile.php?id=100020289960225"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          JullyKasianenko Manikurá Trnava
+        </StyledListLink>
       </li>
     </StyledList>
   );

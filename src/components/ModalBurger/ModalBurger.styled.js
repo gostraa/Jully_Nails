@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 import { ReactComponent as Cross } from "images/svg/cross.svg";
 
@@ -19,15 +19,6 @@ export const CrossButton = styled(Cross)`
   cursor: pointer;
 `;
 
-const fadeIn = keyframes`
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-`;
-
 export const BurgerMenu = styled.div`
   position: absolute;
   width: 180px;
@@ -38,7 +29,6 @@ export const BurgerMenu = styled.div`
   background-color: var(--light-white);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 24px;
-  animation: ${fadeIn} 1.5s ease-in-out;
 `;
 
 export const MenuList = styled.ul`

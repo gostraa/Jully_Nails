@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 import {
   BackdropModal,
@@ -25,16 +26,23 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
   const menu = [{ menu: "diplomes" }, { menu: "price" }, { menu: "reviews" }];
 
   return createPortal(
-    <BackdropModal onClick={handleBackdropClick}>
-      <BurgerMenu>
-        <MenuList>
-          {menu.map(({ menu }) => (
-            <MenuItem>{t(menu)}</MenuItem>
-          ))}
-        </MenuList>
-        <CrossButton onClick={closeModal} />
-      </BurgerMenu>
-    </BackdropModal>,
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <BackdropModal onClick={handleBackdropClick}>
+        <BurgerMenu>
+          <MenuList>
+            {menu.map(({ menu }, index) => (
+              <MenuItem key={index}>{t(menu)}</MenuItem>
+            ))}
+          </MenuList>
+          <CrossButton onClick={closeModal} />
+        </BurgerMenu>
+      </BackdropModal>
+    </motion.div>,
     modal
   );
 };

@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const BackdropModal = styled.div`
   width: 100vw;
@@ -8,15 +8,6 @@ export const BackdropModal = styled.div`
   left: 0px;
   overscroll-behavior: contain;
   background: var(--burger-modal);
-`;
-
-const fadeIn = keyframes`
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
 `;
 
 export const Modal = styled.div`
@@ -29,7 +20,6 @@ export const Modal = styled.div`
   border-radius: 12px 0px 12px 12px;
   background-color: var(--light-white);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  animation: ${fadeIn} 1.5s ease-in-out;
   gap: 10px;
 
   @media (min-width: 768px) {
