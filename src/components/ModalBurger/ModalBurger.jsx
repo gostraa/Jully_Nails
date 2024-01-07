@@ -46,6 +46,7 @@ const ModalBurger = ({ handleBackdropClick, handleKeyDown, closeModal }) => {
                 offset={-70}
                 duration={1000}
                 key={index}
+                onClick={closeModal}
               >
                 <MenuItem>{t(menu)}</MenuItem>
               </Link>

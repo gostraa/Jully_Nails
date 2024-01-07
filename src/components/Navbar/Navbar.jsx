@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <MenuList>
-      {headerMenu.map(({ menu }, idx) => (
+      {headerMenu.map(({ menu }, index) => (
         <Link
           activeClass="active"
           to={menu}
@@ -19,7 +19,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={1000}
-          key={idx}
+          key={index}
         >
           <MenuItem>{t(menu)}</MenuItem>
         </Link>

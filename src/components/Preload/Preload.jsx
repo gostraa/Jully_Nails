@@ -11,6 +11,14 @@ const Preload = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (showPreload) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showPreload]);
+
   return (
     <AnimatePresence>
       {showPreload && (
