@@ -22,12 +22,12 @@ const Preload = () => {
   return (
     <AnimatePresence>
       {showPreload && (
-        <PreloadOverlay>
+        <PreloadOverlay exit={{ opacity: 0 }} transition={{ duration: 3 }}>
           <PreloadStyles
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 3 }}
           >
             <Logo className="logo" />
           </PreloadStyles>

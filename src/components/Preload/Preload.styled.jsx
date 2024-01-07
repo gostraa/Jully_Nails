@@ -21,15 +21,15 @@ export const PreloadStyles = styled(motion.div)`
   }
 `;
 
-export const PreloadOverlay = styled.div`
+export const PreloadOverlay = styled(motion.div)`
   width: 100vw;
   height: 100vh;
-  background: var(--burger-modal);
+  background: var(--light-white);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
-  display: ${({ $isComplete }) => ($isComplete ? "none" : "flex")};
+  display: flex;
   justify-content: center;
   align-items: center;
 `;
