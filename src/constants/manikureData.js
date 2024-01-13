@@ -87,7 +87,7 @@ export const diplomsData = [
 
 export const reviews = [
   {
-    name: "Diana Kohima",
+    name: "Diana Kozina",
     comment: "commentDiana",
   },
   {
