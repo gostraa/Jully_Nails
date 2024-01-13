@@ -93,13 +93,15 @@ export const menuHeader = [
 
 export const service = [
   { serviceItem: "manicure", priceItem: "10€" },
-  { serviceItem: "manicureWithStrengthening", priceItem: "20-25€" },
-  { serviceItem: "buildingUp", priceItem: "30€" },
-  { serviceItem: "removalWithout", priceItem: "5€" },
+  { serviceItem: "manicureWithStrengtheningShort", priceItem: "25€" },
+  { serviceItem: "manicureWithStrengtheningLong", priceItem: "30€" },
+  { serviceItem: "buildingUp", priceItem: "35€" },
+  { serviceItem: "removalWithout", priceItem: "6€" },
   { serviceItem: "removalWith", priceItem: "2€" },
+  { serviceItem: "fixNail", priceItem: "1-2€" },
+  { serviceItem: "design", priceItem: "5€" },
   { serviceItem: "french", priceItem: "+5€" },
   { serviceItem: "rubbing", priceItem: "+1€" },
   { serviceItem: "stones", priceItem: "1€" },
   { serviceItem: "stickers", priceItem: "free" },
-  { serviceItem: "simpleDesign", priceItem: "free" },
 ];

@@ -45,11 +45,11 @@ const ContactsList = ({ $isFooter }) => {
           <Map />
         </div>
         <StyledListLink
-          href="https://www.google.com/maps?q=Jeruzalemská 324/33, 91701 Trnava"
+          href="https://maps.app.goo.gl/ULNcxKs5CadDUwkj7"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Jeruzalemská 324/33, 91701 Trnava
+          Štefánikova 21/111 917 01, Trnava
         </StyledListLink>
       </li>
       <li>

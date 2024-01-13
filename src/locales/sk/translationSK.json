@@ -2,30 +2,41 @@
   "slv": "sk",
   "ukr": "ua",
   "rus": "ru",
+
   "diplomes": "Diplomy",
   "price": "Cenník",
   "reviews": "Recenzie",
   "heroTitle": "So mnou vaše nechty budú dokonalé",
   "manicure": "Manikúra",
   "nailShapes": "Tvary nechtov",
+
   "oval": "Oval",
   "squoval": "Squoval",
   "mandelformig": "Mandelformig",
   "stiletto": "Stiletto",
   "softSquare": "WeichEckig",
   "square": "Eckig",
-  "manicureWithStrengthening": "Gélové nechty (krátke/dlhé)",
-  "buildingUp": "Predĺženie nechtov",
+
+  "manicureWithStrengtheningShort": "Gélové nechty (krátke/stredne)",
+  "manicureWithStrengtheningLong": "Gélové nechty (dlhé)",
+  "buildingUp": "Predĺženie nechtov od",
   "removalWithout": "Odstránenie starého materiálu od inej manikerky bez ďalšej aplikácie gél laku",
   "removalWith": "Odstránenie starého materiálu od inej manikerky pri ďalšej aplikácie gél laku",
+  "fixNail": "Oprava / 1 necht",
+
+  "from": "od",
+  "to": "do",
+  "design": "Dizajn +",
   "french": "Francúzska manikúra",
   "rubbing": "Zrkadlový efekt",
-  "stones": "Veľké kamienky, ozdoby",
+  "stones": "Veľké kamienky, ozdoby 1ks",
   "stickers": "Nálepky, vodolepky",
-  "simpleDesign": "Ednoduchý dizajn (1-3 nechty)",
+
   "free": "zadarmo",
+
   "commentDiana": "Úžasná majsterka🩷 Rýchla a kvalitná praca🩷 Prístup ku každému klientovi🤩",
   "commentAlenka": "Veľmi odporúčam. Vždy odchádzam spokojna, nechtárka je zlatá, všetko vysvetlí aj poradi. Naozaj profesiálny prístup a nechtíky mi dlho vydržia.",
   "commentMariia": "Najlepšie predlžovanie nechtov🩷 Ďakujem za kvalitnú prácu a skvelú atmosféru!",
+
   "addComment": "Pridať recenziu"
 }

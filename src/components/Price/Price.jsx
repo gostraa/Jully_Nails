@@ -18,7 +18,11 @@ const Price = ({ t }) => {
         {serviceList.map(({ serviceItem, priceItem }, idx) => (
           <ServiceItem key={idx}>
             <Service>{t(serviceItem)}</Service>
-            <PriceItem>{t(priceItem)}</PriceItem>
+            {serviceItem === "design" ? (
+              <PriceItem>{`${t("from")} 1 ${t("to")} ${priceItem}`}</PriceItem>
+            ) : (
+              <PriceItem>{t(priceItem)}</PriceItem>
+            )}
           </ServiceItem>
         ))}
       </ul>
